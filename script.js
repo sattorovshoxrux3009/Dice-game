@@ -32,7 +32,7 @@ btnHold.addEventListener('click',()=>{
     current=0;
     document.getElementById(`current--${active}`).textContent=current;
     document.querySelector(`.player--${active}`).classList.remove('player--active');
-    if(score[active]>=20){
+    if(score[active]>=100){
         works=false
         document.querySelector(`.player--${active}`).classList.add('player--winner');
     }
